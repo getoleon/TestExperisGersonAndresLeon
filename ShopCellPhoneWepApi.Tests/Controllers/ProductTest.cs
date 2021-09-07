@@ -40,11 +40,10 @@ namespace ShopCellPhoneWepApi.Tests.Controllers
             controller.Request = new HttpRequestMessage();
             controller.Configuration = new HttpConfiguration();
 
-            //string idUser = "";
+            string idUser = "FED3BC32-4014-457B-BCBF-0BDC98B5B3D6";
             
-            //var response = controller.ProductCarById();
-            //Assert.IsNotNull(response);
-
+            var response = controller.ProductCarById(idUser);
+            Assert.IsNotNull(response);
         }
 
         
